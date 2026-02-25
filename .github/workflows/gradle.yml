@@ -41,3 +41,5 @@ jobs:
 
       - name: Generate and submit dependency graph
         uses: gradle/actions/dependency-submission@v4
+      - name: Run JUnit Tests
+        run: ./gradlew test
